@@ -1,0 +1,239 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+body{
+    background-color:rgb(0, 0, 0);
+    
+}
+
+.app{
+    width:90% ;
+    max-width: 600px;
+    background-color: rgb(0, 0, 0);
+    /* border-radius: 10px; */
+    padding: 30px;
+    margin: 100px auto 0;
+    box-shadow:  5px 5px 5px rgba(0, 0, 255, 0.145);
+
+
+
+}
+
+.app h1{
+    font-size: 25px;
+    color: rgba(255, 0, 0, 0.823);
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding-bottom: 30px;
+   font-weight: 30px;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   box-sizing: border-box;
+   height: 50px;
+
+}
+
+@media (max-width:500px){
+    
+.app h1{
+    font-size: 25px;
+    color: rgba(255, 0, 0, 0.823);
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding-bottom: 30px;
+   font-weight: 30px;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   box-sizing: border-box;
+   height: 70px;
+}
+
+}
+
+.app h1 i{
+    animation: sk 10s  1s infinite ease-in-out ;
+    box-sizing: border-box;
+}
+
+#face{
+   
+    color: rgb(137, 56, 141);
+    animation: f4 3s alternate infinite;
+}
+
+#face2{
+   
+    color: rgb(41, 76, 107);
+    animation: f3 3s alternate infinite;
+}
+
+
+#face3{
+   
+    color: rgb(221, 115, 15);
+    animation: f3 3s alternate infinite;
+}
+
+#face4{
+   
+    color: rgb(35, 95, 148);
+    animation: f4 3s alternate infinite;
+}
+
+
+
+@keyframes f3 {
+    0%{
+       color: rgb(4, 41, 74);
+    }
+    50%{
+        color: rgb(69, 153, 216);
+    }
+    100%{
+        color: rgb(140, 35, 148);
+    }
+}
+
+
+@keyframes f4 {
+    0%{
+       color: rgb(35, 95, 148);
+    }
+    100%{
+        color: rgb(140, 35, 148);
+    }
+}
+
+
+
+
+
+@keyframes sk {
+    0%{
+        font-size: 10px;
+    }
+    100%{
+        font-size: 26px;
+    }
+}
+
+.quiz {
+  
+    padding: 20px 0;
+
+}
+.quiz h2{
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.622);
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.me h5{
+    color: aliceblue;
+    font-weight: 100;
+    font-family:'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -20px;
+   
+
+
+animation-direction: alternate;
+    animation-name: it2;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+
+}
+
+@keyframes it2 {
+    0%{
+        color: white;
+    }
+    50%{
+        color: blue;
+    }
+    100%{
+        color: rgb(0, 0, 0);
+    }
+}
+
+
+
+.btn{
+    background-color:rgb(2, 2, 73);
+    color: rgba(255, 0, 0, 0.753);
+    width: 100%;
+    font-weight: 500;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    cursor: pointer;
+    box-shadow:  4px 4px 4px rgba(0, 0, 255, 0.426);
+}
+.btn:hover:not([disabled]){
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+}
+.btn:disabled{
+    cursor: no-drop;
+}
+
+#next-btn{
+    background-color: rgb(0, 0, 255);
+    color:rgb(255, 255, 255);
+    border: none;
+    outline: none;
+    box-shadow:  4px 4px 4px rgba(0, 0, 255, 0.426);
+    width: 150px;
+    margin: 20px auto 0;
+    padding: 10px;
+    cursor: pointer;
+    border: 0;
+    display: block;
+    font-size: large;
+    
+    
+}
+
+#next-btn i{
+    font-size: large;
+    animation-direction: alternate;
+    animation-name: it;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+
+}
+
+@keyframes it {
+    0%{
+        color: white;
+    }
+    50%{
+        color: blue;
+    }
+    100%{
+        color: red;
+    }
+}
+
+#next-btn:hover{
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    
+
+}
+
+.correct{
+    background-color: rgba(1, 154, 93, 0.603);
+    color: aquamarine;
+    box-shadow:  3px 3px 3px rgba(127, 255, 212, 0.49);
+   
+
+}
+.incorrect{
+    background-color: rgb(60, 1, 13);
+    color: black;
+    box-shadow:  4px 4px 4px rgba(242, 48, 48, 0.262);
+}
